@@ -78,6 +78,7 @@
 
 - 给它权限：mcp
   示例 1 - 我开发的 [dev-mcp](https://github.com/ChainbotAI/dev-mcp)
+  带审核功能： ![image.png](assets/image5.jpg)
   示例 2 - chrome 官方的 [MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)（自动化前端测试）
 - 跨过鸿沟：试着一行代码都不写
   一开始会有点“阵痛”（感觉没有以前效率高，感到挫败），但这是强迫自己跨出去必须经历的。
