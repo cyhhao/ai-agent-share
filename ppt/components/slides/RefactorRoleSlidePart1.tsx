@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Terminal, BrainCircuit, UserCog, Bot } from 'lucide-react';
+import { ArrowRight, Terminal, BrainCircuit, UserCog, Bot, ExternalLink } from 'lucide-react';
 
 const RefactorRoleSlidePart1: React.FC = () => {
   return (
@@ -17,6 +17,15 @@ const RefactorRoleSlidePart1: React.FC = () => {
           你的新职责：定义 <span className="text-orange-600 font-bold">“为什么” (Why)</span> 与 <span className="text-blue-600 font-bold">“做什么” (What)</span>
         </p>
         <p className="text-lg text-slate-400 mt-2 font-mono">而非 “怎么做” (How)</p>
+        
+        <a 
+          href="https://github.com/github/spec-kit" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline mt-4 bg-blue-50 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-blue-100 transition-colors"
+        >
+          <ExternalLink size={14} /> 参考: GitHub Speckit
+        </a>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 w-full max-w-6xl relative z-10">

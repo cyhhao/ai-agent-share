@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mic, Image as ImageIcon, MessageSquare, ArrowRight, Radio } from 'lucide-react';
+import { Mic, Image as ImageIcon, MessageSquare, ArrowRight, Radio, ExternalLink } from 'lucide-react';
 
 const CommsCard = ({ icon, title, desc, delay }: { icon: React.ReactNode, title: string, desc: string, delay: number }) => (
   <motion.div 
@@ -39,6 +39,33 @@ const CommunicationSlide: React.FC = () => {
         <p className="text-xl text-slate-500 font-light">
           为自己提效，让 Agent 更懂你。
         </p>
+        
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+          <a 
+            href="https://wisprflow.ai/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline bg-blue-50 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-blue-100 transition-colors"
+          >
+            <ExternalLink size={14} /> Wisperflow
+          </a>
+          <a 
+            href="https://shandianshuo.cn/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-slate-600 hover:underline bg-slate-100 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-slate-200 transition-colors"
+          >
+            <ExternalLink size={14} /> 闪电说
+          </a>
+          <a 
+            href="https://github.com/cyhhao/vibe-remote" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-indigo-600 hover:underline bg-indigo-50 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-indigo-100 transition-colors"
+          >
+            <ExternalLink size={14} /> vibe-remote (Slack Bot)
+          </a>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">

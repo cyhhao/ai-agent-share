@@ -84,7 +84,7 @@ const SelectionSlide: React.FC = () => {
           <SOTARow 
             category="后端开发" 
             icon={<Code size={18} />} 
-            model="GPT5.1-codex-max" 
+            model="GPT5.1-codex-max VS Claude Opus4.5" 
           />
           <SOTARow 
             category="前端开发" 

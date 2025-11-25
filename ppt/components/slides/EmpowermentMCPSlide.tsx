@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Server, Play, CheckCircle2, MousePointerClick } from 'lucide-react';
+import { Server, Play, CheckCircle2, MousePointerClick, ExternalLink } from 'lucide-react';
 import ZoomableImage from '../ui/ZoomableImage';
 
 const EmpowermentMCPSlide: React.FC = () => {
@@ -32,6 +32,25 @@ const EmpowermentMCPSlide: React.FC = () => {
         <p className="text-xl text-slate-500 font-light">
           Model Context Protocol (MCP) 是让 Agent 安全连接真实世界的钥匙。
         </p>
+        
+        <div className="flex items-center gap-4 mt-4">
+          <a 
+            href="https://github.com/ChainbotAI/dev-mcp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline bg-blue-50 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-blue-100 transition-colors"
+          >
+            <ExternalLink size={14} /> dev-mcp (开发环境)
+          </a>
+          <a 
+            href="https://github.com/ChromeDevTools/chrome-devtools-mcp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-slate-600 hover:underline bg-slate-100 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-slate-200 transition-colors"
+          >
+            <ExternalLink size={14} /> Chrome MCP (测试)
+          </a>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 h-[65vh] relative z-10">

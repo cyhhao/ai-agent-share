@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, ThumbsUp, Twitter, ArrowRight, MessageCircle, Star } from 'lucide-react';
+import { Award, ThumbsUp, Twitter, ArrowRight, MessageCircle, Star, ExternalLink } from 'lucide-react';
 
 const ReviewCard = ({ icon, title, desc, link, linkText, delay }: { icon: React.ReactNode, title: string, desc: string, link?: string, linkText?: string, delay: number }) => (
   <motion.div 
@@ -35,13 +35,31 @@ const SelectionReviewSlide: React.FC = () => {
           <div className="absolute bottom-[10%] right-[20%] w-[40%] h-[40%] bg-purple-100/40 rounded-full blur-3xl opacity-50"></div>
       </div>
 
-      <div className="mb-10 text-center md:text-left relative z-10">
+      <div className="text-center mb-10 relative z-10">
         <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
           1. 学会挑人 <span className="text-3xl font-light text-slate-400">/ 看评价（口碑）</span>
         </h2>
-        <p className="text-xl text-slate-500 font-light max-w-5xl leading-relaxed">
-          一个好的测试分数往往只代表模型的预训练好，但实际使用往往有体感差异。
-        </p>
+        <p className="text-xl text-slate-500 font-light">通过人类实际使用体验来评估。</p>
+        
+        {/* External Links */}
+        <div className="flex items-center justify-center gap-4 mt-6">
+          <a 
+            href="https://lmarena.ai/leaderboard" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm text-blue-600 hover:underline flex items-center gap-1 bg-blue-50 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-blue-100 transition-colors"
+          >
+            <ExternalLink size={14} /> LMSYS Arena 双盲测试
+          </a>
+          <a 
+            href="https://x.com/i/lists/1955800360679039488" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm text-slate-600 hover:underline flex items-center gap-1 bg-slate-100 px-4 py-2 rounded-full backdrop-blur-sm shadow-sm font-semibold hover:bg-slate-200 transition-colors"
+          >
+            <ExternalLink size={14} /> Twitter AI 博主 List
+          </a>
+        </div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-12 items-stretch relative z-10">

@@ -38,7 +38,7 @@
 
 | 文科（写文章） | 理科（研究） | 后端开发         | 前端开发    | 视觉                            | 音乐    | 视频                      |
 | -------------- | ------------ | ---------------- | ----------- | ------------------------------- | ------- | ------------------------- |
-| gemini3-pro    | GPT5.1-high  | GPT5.1-codex-max | gemini3-pro | gemini3-pro-image (nanobanana2) | Suno V5 | kling2.5 = veo3.1 > Sora2 |
+| gemini3-pro    | GPT5.1-high  | GPT5.1-codex-max vs Claude Opus 4.5 | gemini3-pro | gemini3-pro-image (nanobanana2) | Suno V5 | kling2.5 = veo3.1 > Sora2 |
 
 ### 铁律
 
