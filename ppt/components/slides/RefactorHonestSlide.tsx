@@ -1,5 +1,6 @@
 import React from 'react';
 import ZoomableImage from '../ui/ZoomableImage';
+import honestImg from '@/assets/image.png';
 
 const RefactorHonestSlide: React.FC = () => {
   const hotspots = [
@@ -40,7 +41,7 @@ const RefactorHonestSlide: React.FC = () => {
       <div className="flex-1 w-full flex items-center justify-center min-h-0">
         <div className="relative w-full max-w-6xl h-full max-h-[70vh]">
              <ZoomableImage 
-              src="assets/image.png" 
+              src={honestImg} 
               alt="Honest Communication Example" 
               className="w-full h-full rounded-2xl border border-slate-200 shadow-2xl bg-white"
               hotspots={hotspots}

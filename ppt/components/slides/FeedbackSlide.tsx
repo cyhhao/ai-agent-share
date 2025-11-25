@@ -1,5 +1,6 @@
 import React from 'react';
 import ZoomableImage from '../ui/ZoomableImage';
+import feedbackImg from '@/assets/image 2.png';
 
 const FeedbackSlide: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const FeedbackSlide: React.FC = () => {
       <div className="flex-1 w-full flex items-center justify-center min-h-0">
         <div className="relative w-full max-w-6xl h-full max-h-[70vh]">
           <ZoomableImage 
-            src="assets/image 2.png" 
+            src={feedbackImg} 
             alt="Feedback Loop Example" 
             className="w-full h-full rounded-2xl border border-slate-200 shadow-2xl bg-white"
           />

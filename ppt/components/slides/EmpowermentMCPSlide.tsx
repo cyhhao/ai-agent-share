@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Server, Play, CheckCircle2, MousePointerClick, ExternalLink } from 'lucide-react';
 import ZoomableImage from '../ui/ZoomableImage';
+import mcpImg from '@/assets/image5.jpg';
 
 const EmpowermentMCPSlide: React.FC = () => {
   const hotspots = [
@@ -73,7 +74,7 @@ const EmpowermentMCPSlide: React.FC = () => {
            </div>
            <div className="flex-1 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 relative shadow-inner group">
               <ZoomableImage 
-                src="assets/image5.jpg" 
+                src={mcpImg} 
                 alt="dev-mcp interface" 
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                 hotspots={hotspots}
